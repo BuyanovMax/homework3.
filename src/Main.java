@@ -7,6 +7,11 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
+        task9();
+        task10();
+        task11();
+        task12();
 
     }
 
@@ -23,8 +28,8 @@ public class Main {
         }
 
 
-
     }
+
     public static void task2() {
         System.out.println("Задача 2");
 
@@ -39,6 +44,7 @@ public class Main {
 
 
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         double speed = 80;
@@ -57,7 +63,7 @@ public class Main {
         boolean kinderGarten = age >= 2 && age <= 6;
         boolean school = age >= 7 && age <= 18;
         boolean university = age >= 18 && age <= 24;
-        boolean work = age >= 24 ;
+        boolean work = age >= 24;
         if (kinderGarten) {
             System.out.println("в детский сад");
         }
@@ -73,6 +79,7 @@ public class Main {
 
 
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         int age = 6;
@@ -90,6 +97,7 @@ public class Main {
             System.out.println("можно без сопровождения взрослого");
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         int standingPlace = 42;
@@ -101,7 +109,7 @@ public class Main {
         } else {
             System.out.println("Вагон уже полностью забит!");
         }
-            if (passengers <= seatPlace) {
+        if (passengers <= seatPlace) {
 
             System.out.println("Есть место сидячее");
         }
@@ -110,6 +118,7 @@ public class Main {
         }
 
     }
+
     public static void task7() {
         System.out.println("Задача 7");
         int one = 7;
@@ -118,22 +127,111 @@ public class Main {
 
 
         if (one > two && one > three) {
-        System.out.println("Число 1");
+            System.out.println("Число 1");
         } else {
-        if (two > three) {
+            if (two > three) {
 
-            System.out.println("Число 2");
-        }else
-            System.out.println("Число 3");
+                System.out.println("Число 2");
+            } else
+                System.out.println("Число 3");
+        }
+
+
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int clientOS = 1;
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+            } else
+            System.out.println("Установите версию приложения для Android по ссылке");
+
+        }
+
+
+    public static void task9() {
+        System.out.println("Задача 9");
+        int clientOS = 0;
+        int clientDeviceYear = 2015;
+        if (clientOS == 0) {
+            if (clientDeviceYear <= 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+
+            } else
+                System.out.println("Установите обычную версию приложения для iOS по ссылке");
+
+        } else   {
+            if (clientDeviceYear <= 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+
+            } else
+            System.out.println("Установите обычную версию приложения для Android по ссылке");
+        }
+    }
+
+    public static void task10() {
+        System.out.println("Задача 10");
+        int year = 2021;
+        if (year % 4 == 0 && year % 400 != 0 || year % 400 == 0) {
+            System.out.println(year + " Год является високосным");
+        } else {
+            System.out.println(year + " Год не является високосным");
+
+        }
+
+
+    }
+    public static void task11() {
+        System.out.println("Задача 11");
+        int deliveryDistance = 42;
+        int days = 1;
+        if (deliveryDistance > 20) {
+            days++;
+            System.out.println("Потребуется дней: " + days);
+        }
+        if (deliveryDistance > 60) {
+            days++;
+            System.out.println("Потребуется дней: " + days);
+        }
+        if (deliveryDistance > 100) {
+
+            System.out.println("Доставки нет");
+
+        }
+    }
+    public static void task12() {
+        System.out.println("Задача 12");
+        int monthNumber = 11;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осенний месяц");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+
+
+        }
     }
 
 
 
 
 
-
-
-}
-
-}
-
+    }
